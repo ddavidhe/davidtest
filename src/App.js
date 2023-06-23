@@ -1,6 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
+async function fetchFood() {
+  const res = await fetch ("https://api.edamam.com/api/food-database/v2/parser?app_id=05937eba&app_key=7f8c81b2f89b7d71d740c4ba140c9201&ingr=apple&nutrition-type=cooking&category=generic-foods");
+  let record = await res.json();
+  console.log("fetched a food: ", record.joke);
+  return record.joke
+}
+
+
 function App() {
   return (
     <div className="App">
