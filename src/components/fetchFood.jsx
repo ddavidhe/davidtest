@@ -6,7 +6,8 @@ const getApple = async () => {
       const food = data.parsed[0].food;
       const nutrients = food.nutrients;
       const nutrientsObj = {
-        name: food.label,
+          name: food.label,
+          servingsize: 100,
         calories: nutrients.ENERC_KCAL,
         protein: nutrients.PROCNT,
         fat: nutrients.FAT,

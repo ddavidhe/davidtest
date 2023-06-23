@@ -25,7 +25,10 @@ function App() {
         {nutrientsObj && (
           <>
             <div>
-              <b>Name:</b> {nutrientsObj.name}g
+              <b>Name:</b> {nutrientsObj.name}
+            </div>
+            <div>
+              <b>Serving Size:</b> {nutrientsObj.servingsize}g
             </div>
             <div>
               <b>Calories:</b> {nutrientsObj.calories}g
