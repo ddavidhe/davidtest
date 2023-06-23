@@ -25,22 +25,22 @@ function App() {
         {nutrientsObj && (
           <>
             <div>
-              <b>Name:</b> {nutrientsObj.name}
+              <b>Name:</b> {nutrientsObj.name}g
             </div>
             <div>
-              <b>Calories:</b> {nutrientsObj.calories}
+              <b>Calories:</b> {nutrientsObj.calories}g
             </div>
             <div>
-              <b>Protein:</b> {nutrientsObj.protein}
+              <b>Protein:</b> {nutrientsObj.protein}g
             </div>
             <div>
-              <b>Fat:</b> {nutrientsObj.fat}
+              <b>Fat:</b> {nutrientsObj.fat}g
             </div>
             <div>
-              <b>Carbohydrates:</b> {nutrientsObj.carbohydrates}
+              <b>Carbohydrates:</b> {nutrientsObj.carbohydrates}g
             </div>
             <div>
-              <b>Fiber:</b> {nutrientsObj.fiber}
+              <b>Fiber:</b> {nutrientsObj.fiber}g
             </div>
           </>
         )}
