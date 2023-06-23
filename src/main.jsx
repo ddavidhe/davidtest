@@ -6,7 +6,7 @@ import './main.css';
 
 function App() {
 
-  const nutrientsObj = {calories:"", protein:"", fat:"", carbohydrates:"", fiber:""}
+  const nutrientsObj = {}
 
 
   const getApple = () => {
