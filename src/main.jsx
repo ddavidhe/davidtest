@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './main.css';
 
@@ -7,7 +7,6 @@ import './main.css';
 function App() {
 
   const nutrientsObj = {}
-
 
   const getApple = () => {
     fetch("https://api.edamam.com/api/food-database/v2/parser?app_id=05937eba&app_key=7f8c81b2f89b7d71d740c4ba140c9201&ingr=apple&nutrition-type=cooking&category=generic-foods")
@@ -25,12 +24,6 @@ function App() {
         console.log("Error fetching data:", error);
       });
   };
-
-
-
-
-  const [food, setFood] = useState('no')
-
   
   return (
     <div className="App">
