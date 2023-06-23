@@ -12,6 +12,7 @@ function App() {
       setNutrientsObj(data);
     } catch (error) {
       // Handle error if necessary
+      console.log("typo in the food bro")
     }
   };
 
