@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const app_id = "05937eba";
 const app_key = "7f8c81b2f89b7d71d740c4ba140c9201";
@@ -61,7 +63,9 @@ function SearchFood() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button onClick={onSearch}>Search</button>
+        <div>
+          <FontAwesomeIcon icon={faSearch} onClick={onSearch} style={{ cursor: "pointer" }}/>          
+        </div>
       </div>
 
       <div className="search-results">
