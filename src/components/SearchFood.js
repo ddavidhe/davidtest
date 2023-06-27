@@ -54,6 +54,12 @@ function SearchFood() {
       });
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      onSearch();
+    }
+  };
+
   return (
     <>
       <div className="search-food-section">
@@ -62,6 +68,7 @@ function SearchFood() {
           placeholder="Search Food Item"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
         />
         <div>
           <FontAwesomeIcon icon={faSearch} onClick={onSearch} style={{ cursor: "pointer" }}/>          
