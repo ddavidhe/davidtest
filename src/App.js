@@ -5,9 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div className="website-banner"> 
-        EXPLORE FOODS!
-      </div>
+      <div className="website-banner">Snack Track!</div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SearchFood />} />
