@@ -36,21 +36,20 @@ function SearchFood() {
           setNutrientsObj(nutrientsObj);
           console.log("nutrients - ", nutrientsObj);
           setFoodFound(true);
-
         } else {
           console.log("not found - ", data);
+          // Why is data there^
           setFoodFound(false);
         }
-        
+
         setLoading(false);
         setQuery("");
       })
 
       .catch((error) => {
-        console.log("error fetching", error)
-        setLoading(false)
+        console.log("error fetching", error);
+        setLoading(false);
       });
-    
   };
 
   return (
