@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './main';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-let appID = '05937eba'
-let appKey = '7f8c81b2f89b7d71d740c4ba140c9201'
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
