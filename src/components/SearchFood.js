@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -6,6 +7,7 @@ const app_id = "05937eba";
 const app_key = "7f8c81b2f89b7d71d740c4ba140c9201";
 
 function SearchFood() {
+  let navigate = useNavigate();
   const [query, setQuery] = useState("");
   const [foodItem, setFoodItem] = useState(null);
   const [nutrientsObj, setNutrientsObj] = useState(null);
@@ -59,8 +61,45 @@ function SearchFood() {
     }
   };
 
+  function RouteFruits() {
+    navigate("/fruits");
+  }
+
+  function RouteVegetables() {
+    navigate("/vegetables");
+  }
+
+  function RouteGrains() {
+    navigate("/grains");
+  }
+
+  function RouteDairy() {
+    navigate("/dairy");
+  }
+
+  function RouteMeat() {
+    navigate("/meat");
+  }
+
   return (
     <>
+      <div>
+        <button className="categories-button" onClick={RouteFruits}>
+          <span class="text">Fruits</span>
+        </button>
+        <button className="categories-button" onClick={RouteVegetables}>
+          <span class="text">Vegetables</span>
+        </button>
+        <button className="categories-button" onClick={RouteGrains}>
+          <span class="text">Grains</span>
+        </button>
+        <button className="categories-button" onClick={RouteDairy}>
+          <span class="text">Dairy</span>
+        </button>
+        <button className="categories-button" onClick={RouteMeat}>
+          <span class="text">Meat and Alternatives</span>
+        </button>
+      </div>
       <div className="search-food-section">
         <input
           type="text"
@@ -93,7 +132,7 @@ function SearchFood() {
                       <b>Serving Size:</b> {nutrientsObj.servingsize}g
                     </div>
                     <div>
-                      <b>Calories:</b> {nutrientsObj.calories}
+                      <b>Calories:</b> {nutrientsObj.calories}g
                     </div>
                     <div>
                       <b>Protein:</b> {nutrientsObj.protein}g
