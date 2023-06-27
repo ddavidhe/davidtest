@@ -93,7 +93,7 @@ function SearchFood() {
                       <b>Serving Size:</b> {nutrientsObj.servingsize}g
                     </div>
                     <div>
-                      <b>Calories:</b> {nutrientsObj.calories}g
+                      <b>Calories:</b> {nutrientsObj.calories}
                     </div>
                     <div>
                       <b>Protein:</b> {nutrientsObj.protein}g
