@@ -9,8 +9,11 @@ function DisplayData(food) {
   const [nutrientsObj, setNutrientsObj] = useState(null);
   const [foodFound, setFoodFound] = useState(false);
   const [servingSize, setServingSize] = useState(100);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
+
     fetch(
       `https://api.edamam.com/api/food-database/v2/parser?app_id=${app_id}&app_key=${app_key}&ingr=${query}&nutrition-type=cooking&category=generic-foods`
     )
@@ -35,62 +38,79 @@ function DisplayData(food) {
           console.log("not found - ", data);
           setFoodFound(false);
         }
+
+        setLoading(false);
+        
       })
 
       .catch((error) => {
         console.log("error fetching", error);
+        setLoading(false);
       });
   }, [query]);
 
   return (
     <>
-      <div className="search-results">
-        {
-          <>
-            {foodFound && foodItem && (
-              <div className="food-details" key={foodItem.foodId}>
-                <h4>{foodItem.label}</h4>
-                <img src={foodItem.image} alt={foodItem.label} />
-                {nutrientsObj && (
-                  <>
-                    <div>
-                      <label>
-                        Serving Size (g):
-                        <input
-                          type="number"
-                          min="1"
-                          value={servingSize}
-                          onChange={(e) => setServingSize(e.target.value)}
-                        />
-                      </label>
-                    </div>
-                    <div>
-                      <b>Calories:</b>{" "}
-                      {(nutrientsObj.calories * servingSize / 100).toFixed(2)}
-                    </div>
-                    <div>
-                      <b>Protein:</b>{" "}
-                      {(nutrientsObj.protein * servingSize / 100).toFixed(2)}g
-                    </div>
-                    <div>
-                      <b>Fat:</b>{" "}
-                      {(nutrientsObj.fat * servingSize / 100).toFixed(2)}g
-                    </div>
-                    <div>
-                      <b>Carbohydrates:</b>{" "}
-                      {(nutrientsObj.carbohydrates * servingSize / 100).toFixed(2)}g
-                    </div>
-                    <div>
-                      <b>Fiber:</b>{" "}
-                      {(nutrientsObj.fiber * servingSize / 100).toFixed(2)}g
-                    </div>
-                  </>
-                )}
-              </div>
-            )}
-          </>
-        }
-      </div>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <div className="search-results">
+          {
+            <>
+              {foodFound && foodItem && (
+                <div className="food-details" key={foodItem.foodId}>
+                  <h4>{foodItem.label}</h4>
+                  <img src={foodItem.image} alt={foodItem.label} />
+                  {nutrientsObj && (
+                    <>
+                      <div>
+                        <label>
+                          Serving Size (g):
+                          <input
+                            type="number"
+                            min="1"
+                            value={servingSize}
+                            onChange={(e) => setServingSize(e.target.value)}
+                          />
+                        </label>
+                      </div>
+                      <div>
+                        <b>Calories:</b>{" "}
+                        {((nutrientsObj.calories * servingSize) / 100).toFixed(
+                          2
+                        )}
+                      </div>
+                      <div>
+                        <b>Protein:</b>{" "}
+                        {((nutrientsObj.protein * servingSize) / 100).toFixed(
+                          2
+                        )}
+                        g
+                      </div>
+                      <div>
+                        <b>Fat:</b>{" "}
+                        {((nutrientsObj.fat * servingSize) / 100).toFixed(2)}g
+                      </div>
+                      <div>
+                        <b>Carbohydrates:</b>{" "}
+                        {(
+                          (nutrientsObj.carbohydrates * servingSize) /
+                          100
+                        ).toFixed(2)}
+                        g
+                      </div>
+                      <div>
+                        <b>Fiber:</b>{" "}
+                        {((nutrientsObj.fiber * servingSize) / 100).toFixed(2)}g
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
+            </>
+          }
+        </div>
+      )}
     </>
   );
 }
