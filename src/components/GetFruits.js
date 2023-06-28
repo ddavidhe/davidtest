@@ -100,6 +100,9 @@ function FruitList() {
         <button className="FIX CSS" onClick={RouteStrawberry}>
           <span class="text">Strawberry</span>
         </button>
+        <button className="FIX CSS" onClick={RouteWatermelon}>
+          <span class="text">Watermelon</span>
+        </button>
       </div>
     </>
   );
