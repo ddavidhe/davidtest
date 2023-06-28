@@ -16,11 +16,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<SearchFood />} />
-            <Route path="/fruits" element={<GetFruits />} />
-            <Route path="/vegetables" element={<GetVegetables />} />
-            <Route path="/grains" element={<GetGrains />} />
-            <Route path="/dairy" element={<GetDairy />} />
-            <Route path="/meat" element={<GetMeat />} />
+            <Route path="/fruits/*" element={<GetFruits />} />
+            <Route path="/vegetables/*" element={<GetVegetables />} />
+            <Route path="/grains/*" element={<GetGrains />} />
+            <Route path="/dairy/*" element={<GetDairy />} />
+            <Route path="/meat/*" element={<GetMeat />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
@@ -41,7 +41,7 @@ function Layout() {
       <div className="website-banner">
         Snack Track
         <br></br>
-        <button className="categories-button" onClick={RouteHome}>
+        <button className="FIX CSS" onClick={RouteHome}>
           <span class="text">Home</span>
         </button>
       </div>
