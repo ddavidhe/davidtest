@@ -11,6 +11,7 @@ import GetIceCream from "../foodCategories/dairy/icecream";
 import GetMilk from "../foodCategories/dairy/milk";
 import GetSourCream from "../foodCategories/dairy/sourcream";
 import GetYogurt from "../foodCategories/dairy/yogurt";
+import GetWheyProtein from "../foodCategories/dairy/wheyprotein";
 
 function GetDairy() {
   return (
@@ -27,6 +28,7 @@ function GetDairy() {
           <Route path="/milk" element={<GetMilk />} />
           <Route path="/sourcream" element={<GetSourCream />} />
           <Route path="/yogurt" element={<GetYogurt />} />
+          <Route path="/wheyprotein" element={<GetWheyProtein />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </div>
@@ -64,6 +66,9 @@ function DairyList() {
   function RouteYogurt() {
     navigate("/dairy/yogurt");
   }
+  function RouteWheyProtein() {
+    navigate("/dairy/wheyprotein");
+  }
 
   return (
     <>
@@ -94,6 +99,9 @@ function DairyList() {
         </button>
         <button className="FIX CSS" onClick={RouteYogurt}>
           <span class="text">Yogurt</span>
+        </button>
+        <button className="FIX CSS" onClick={RouteWheyProtein}>
+          <span class="text">Whey Protein</span>
         </button>
       </div>
     </>
