@@ -4,7 +4,7 @@ const app_id = "05937eba";
 const app_key = "7f8c81b2f89b7d71d740c4ba140c9201";
 
 function DisplayData(food) {
-  const [query, setQuery] = useState("apple");
+  const [query] = useState(food);
   const [foodItem, setFoodItem] = useState(null);
   const [nutrientsObj, setNutrientsObj] = useState(null);
   const [foodFound, setFoodFound] = useState(false);
