@@ -14,6 +14,7 @@ function SearchFood() {
   const [foodFound, setFoodFound] = useState(false);
   const [searched, setSearched] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [servingSize, setServingSize] = useState(100);
 
   const onSearch = () => {
     setSearched(true);
@@ -129,22 +130,35 @@ function SearchFood() {
                 {nutrientsObj && (
                   <>
                     <div>
-                      <b>Serving Size:</b> {nutrientsObj.servingsize}g
+                      <label>
+                        Serving Size (g):
+                        <input
+                          type="number"
+                          min="1"
+                          value={servingSize}
+                          onChange={(e) => setServingSize(e.target.value)}
+                        />
+                      </label>
                     </div>
                     <div>
-                      <b>Calories:</b> {nutrientsObj.calories}
+                      <b>Calories:</b>{" "}
+                      {(nutrientsObj.calories * servingSize / 100).toFixed(2)}
                     </div>
                     <div>
-                      <b>Protein:</b> {nutrientsObj.protein}g
+                      <b>Protein:</b>{" "}
+                      {(nutrientsObj.protein * servingSize / 100).toFixed(2)}g
                     </div>
                     <div>
-                      <b>Fat:</b> {nutrientsObj.fat}g
+                      <b>Fat:</b>{" "}
+                      {(nutrientsObj.fat * servingSize / 100).toFixed(2)}g
                     </div>
                     <div>
-                      <b>Carbohydrates:</b> {nutrientsObj.carbohydrates}g
+                      <b>Carbohydrates:</b>{" "}
+                      {(nutrientsObj.carbohydrates * servingSize / 100).toFixed(2)}g
                     </div>
                     <div>
-                      <b>Fiber:</b> {nutrientsObj.fiber}g
+                      <b>Fiber:</b>{" "}
+                      {(nutrientsObj.fiber * servingSize / 100).toFixed(2)}g
                     </div>
                   </>
                 )}
