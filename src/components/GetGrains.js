@@ -10,8 +10,14 @@ import GetOats from "../foodCategories/grains/oats";
 import GetPasta from "../foodCategories/grains/pasta";
 import GetQuinoa from "../foodCategories/grains/quinoa";
 import GetRice from "../foodCategories/grains/rice";
-import GetRye from "../foodCategories/grains/rye";
-import GetWheat from "../foodCategories/grains/wheat";
+import barley from "../foodPictures/grains/barley.jpeg";
+import bread from "../foodPictures/grains/bread.jpeg";
+import buckwheat from "../foodPictures/grains/buckwheat.jpeg";
+import cereal from "../foodPictures/grains/cereal.jpeg";
+import oats from "../foodPictures/grains/oats.webp";
+import pasta from "../foodPictures/grains/pasta.jpeg";
+import quinoa from "../foodPictures/grains/quinoa.jpeg";
+import rice from "../foodPictures/grains/rice.webp";
 
 function GetGrains() {
   return (
@@ -27,8 +33,6 @@ function GetGrains() {
           <Route path="/pasta" element={<GetPasta />} />
           <Route path="/quinoa" element={<GetQuinoa />} />
           <Route path="/rice" element={<GetRice />} />
-          <Route path="/rye" element={<GetRye />} />
-          <Route path="/wheat" element={<GetWheat />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </div>
@@ -72,11 +76,7 @@ function GrainList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://cdn.foodaciously.com/static/stories/9ad05c90-6a44-47e3-9dca-cf10cdba18d3/cooked-barley-grains-close-up-47668b1d7aa0c9665f5433ec8eecf44b-640-q60.jpg"
-            class="max-w-xs"
-            alt="Barley"
-          />
+          <img src={barley} class="max-w-xs" alt="Barley" />
           <div
             onClick={RouteBarley}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -90,11 +90,7 @@ function GrainList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://houseofnasheats.com/wp-content/uploads/2022/02/French-Bread-1.jpg"
-            class="max-w-xs"
-            alt="Bread"
-          />
+          <img src={bread} class="max-w-xs" alt="Bread" />
           <div
             onClick={RouteBread}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -108,11 +104,7 @@ function GrainList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://www.olgainthekitchen.com/wp-content/uploads/2020/01/How-to-Cook-Buckwheat-Kasha-Recipe-3.jpg"
-            class="max-w-xs"
-            alt="Buckwheat"
-          />
+          <img src={buckwheat} class="max-w-xs" alt="Buckwheat" />
           <div
             onClick={RouteBuckwheat}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -126,11 +118,7 @@ function GrainList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://i.pinimg.com/736x/6d/af/bf/6dafbf8127db2bbfd48b2140e89a95cc.jpg"
-            class="max-w-xs"
-            alt="Cereal"
-          />
+          <img src={cereal} class="max-w-xs" alt="Cereal" />
           <div
             onClick={RouteCereal}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -146,11 +134,7 @@ function GrainList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://media.architecturaldigest.com/photos/63fe6ed58e4acf42248cafd3/1:1/w_4672,h_4672,c_limit/GettyImages-1170856565.jpg"
-            class="max-w-xs"
-            alt="Oats"
-          />
+          <img src={oats} class="max-w-xs" alt="Oats" />
           <div
             onClick={RouteOats}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -164,11 +148,7 @@ function GrainList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://images.immediate.co.uk/production/volatile/sites/30/2013/05/Puttanesca-fd5810c.jpg"
-            class="max-w-xs"
-            alt="Pasta"
-          />
+          <img src={pasta} class="max-w-xs" alt="Pasta" />
           <div
             onClick={RoutePasta}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -182,11 +162,7 @@ function GrainList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://hips.hearstapps.com/thepioneerwoman/wp-content/uploads/2016/01/how-to-cook-quinoa-01.jpg?crop=0.6665xw:1xh;center,top&resize=1200:*"
-            class="max-w-xs"
-            alt="Quinoa"
-          />
+          <img src={quinoa} class="max-w-xs" alt="Quinoa" />
           <a href="#!">
             <div
               onClick={RouteQuinoa}
@@ -202,11 +178,7 @@ function GrainList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://www.keepingthepeas.com/wp-content/uploads/2021/07/ninja-foodi-rice-8.jpg"
-            class="max-w-xs"
-            alt="Rice"
-          />
+          <img src={rice} class="max-w-xs" alt="Rice" />
           <a href="#!">
             <div
               onClick={RouteRice}

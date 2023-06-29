@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        guardian: "url('./foodCategories/food-banner.jpeg')",
+        guardian: "url('./food-banner.jpeg')",
       },
     },
   },

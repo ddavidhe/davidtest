@@ -10,8 +10,14 @@ import GetKiwi from "../foodCategories/fruits/kiwi";
 import GetMango from "../foodCategories/fruits/mango";
 import GetOrange from "../foodCategories/fruits/orange";
 import GetPineapple from "../foodCategories/fruits/pineapple";
-import GetStrawberry from "../foodCategories/fruits/strawberry";
-import GetWatermelon from "../foodCategories/fruits/watermelon";
+import apple from "../foodPictures/fruits/apple.jpeg";
+import avocado from "../foodPictures/fruits/avocado.jpeg";
+import banana from "../foodPictures/fruits/banana.jpg";
+import grapes from "../foodPictures/fruits/grapes.jpeg";
+import kiwi from "../foodPictures/fruits/kiwi.jpeg";
+import mango from "../foodPictures/fruits/mango.jpeg";
+import orange from "../foodPictures/fruits/orange.jpeg";
+import pineapple from "../foodPictures/fruits/pineapples.jpeg";
 
 function GetFruits() {
   return (
@@ -27,8 +33,6 @@ function GetFruits() {
           <Route path="/mango" element={<GetMango />} />
           <Route path="/orange" element={<GetOrange />} />
           <Route path="/pineapple" element={<GetPineapple />} />
-          <Route path="/strawberry" element={<GetStrawberry />} />
-          <Route path="/watermelon" element={<GetWatermelon />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </div>
@@ -72,11 +76,7 @@ function FruitList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://hips.hearstapps.com/hmg-prod/images/apples-royalty-free-image-164084111-1537885595.jpg?crop=0.66667xw:1xh;center,top&resize=1200:*"
-            class="max-w-xs"
-            alt="Apple"
-          />
+          <img src={apple} class="max-w-xs" alt="Apple" />
           <div
             onClick={RouteApple}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -90,11 +90,7 @@ function FruitList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://www.rainforest-alliance.org/wp-content/uploads/2021/06/bananas-1-e1624909301641.jpg.optimal.jpg"
-            class="max-w-xs"
-            alt="Banana"
-          />
+          <img src={banana} class="max-w-xs" alt="Banana" />
           <div
             onClick={RouteBanana}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -108,11 +104,7 @@ function FruitList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://www.jessicagavin.com/wp-content/uploads/2019/04/avocados-3-600x900.jpg"
-            class="max-w-xs"
-            alt="Avocado"
-          />
+          <img src={avocado} class="max-w-xs" alt="Avocado" />
           <div
             onClick={RouteAvocado}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -126,11 +118,7 @@ function FruitList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://asvfarms.co.za/wp-content/uploads/2022/09/crimson-seedless-two-bunches-square.jpg"
-            class="max-w-xs"
-            alt="Grape"
-          />
+          <img src={grapes} class="max-w-xs" alt="Grape" />
           <div
             onClick={RouteGrape}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -146,11 +134,7 @@ function FruitList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://www.chrisbowers.co.uk/controlpanel/ckfinder/userfiles/images/kiwi%20vine.jpg"
-            class="max-w-xs"
-            alt="Kiwi"
-          />
+          <img src={kiwi} class="max-w-xs" alt="Kiwi" />
           <div
             onClick={RouteKiwi}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -164,11 +148,7 @@ function FruitList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            class="max-w-xs"
-            alt="Mango"
-          />
+          <img src={mango} class="max-w-xs" alt="Mango" />
           <div
             onClick={RouteMango}
             class="absolute bottom-0 left-0 right-0 top-0 h-full w-full bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-2xl text-black font-serif font-semibold"
@@ -182,11 +162,7 @@ function FruitList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg"
-            class="max-w-xs"
-            alt="Orange"
-          />
+          <img src={orange} class="max-w-xs" alt="Orange" />
           <a href="#!">
             <div
               onClick={RouteOrange}
@@ -202,11 +178,7 @@ function FruitList() {
           data-te-ripple-init
           data-te-ripple-color="light"
         >
-          <img
-            src="https://www.madaboutmacarons.com/wp-content/uploads/2022/01/French-pineapples.jpg"
-            class="max-w-xs"
-            alt="Pineapple"
-          />
+          <img src={pineapple} class="max-w-xs" alt="Pineapple" />
           <a href="#!">
             <div
               onClick={RoutePineapple}
