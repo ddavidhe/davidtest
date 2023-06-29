@@ -8,6 +8,8 @@ import GetMeat from "./components/GetMeat";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import NoPage from "./components/NoPage";
 import { useNavigate } from "react-router-dom";
+import { Home } from "react-feather";
+import HomeButton from "./components/HomeButton";
 
 function App() {
   return (
@@ -38,12 +40,16 @@ function Layout() {
 
   return (
     <>
-      <div className="website-banner">
+      <div class="block px-10 pb-10 text-black text-5xl font-serif font-medium leading-tight bg-center bg-no-repeat bg-cover bg-guardian md:px-5 md:py-5 lg:px-10 lg:py-10">
         Snack Track
         <br></br>
-        <button className="FIX CSS" onClick={RouteHome}>
-          <span class="text">Home</span>
-        </button>
+        <HomeButton
+          onClick={RouteHome}
+          text="Home"
+          class="absolute top-8 left-10 h-16 w-16 text-xl"
+        >
+          <Home size={65} />
+        </HomeButton>
       </div>
       <div>
         <Outlet />
