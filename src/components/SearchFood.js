@@ -68,17 +68,6 @@ function SearchFood() {
     }
   };
 
-  // function RouteHome() {
-  //   setFoodItem(null);
-  //   setNutrientsObj(null);
-  //   setFoodFound(false);
-  //   setSearched(false);
-  //   setLoading(false);
-  //   setErrorMessage("");
-  //   setQuery("");
-  //   navigate("/");
-  // }
-
   function RouteFruits() {
     navigate("/fruits");
   }
@@ -133,8 +122,8 @@ function SearchFood() {
             style={{ cursor: "pointer" }}
           />
         </div>
-        {errorMessage && <p>{errorMessage}</p>}
       </div>
+      {errorMessage && <p>{errorMessage}</p>}
 
       <div className="search-results">
         {loading ? (
