@@ -40,7 +40,6 @@ function DisplayData(food) {
         }
 
         setLoading(false);
-        
       })
 
       .catch((error) => {
@@ -64,12 +63,13 @@ function DisplayData(food) {
                   {nutrientsObj && (
                     <>
                       <div>
-                        <label>
+                        <label class="font-semibold">
                           Serving Size (g):
                           <input
                             type="number"
                             min="1"
                             value={servingSize}
+                            class="text-right border-2 border-black ml-2"
                             onChange={(e) => setServingSize(e.target.value)}
                           />
                         </label>

@@ -130,35 +130,40 @@ function SearchFood() {
                 {nutrientsObj && (
                   <>
                     <div>
-                      <label>
+                      <label class="font-semibold">
                         Serving Size (g):
                         <input
                           type="number"
                           min="1"
                           value={servingSize}
+                          class="text-right border-2 border-black ml-2 font-normal"
                           onChange={(e) => setServingSize(e.target.value)}
                         />
                       </label>
                     </div>
                     <div>
                       <b>Calories:</b>{" "}
-                      {(nutrientsObj.calories * servingSize / 100).toFixed(2)}
+                      {((nutrientsObj.calories * servingSize) / 100).toFixed(2)}
                     </div>
                     <div>
                       <b>Protein:</b>{" "}
-                      {(nutrientsObj.protein * servingSize / 100).toFixed(2)}g
+                      {((nutrientsObj.protein * servingSize) / 100).toFixed(2)}g
                     </div>
                     <div>
                       <b>Fat:</b>{" "}
-                      {(nutrientsObj.fat * servingSize / 100).toFixed(2)}g
+                      {((nutrientsObj.fat * servingSize) / 100).toFixed(2)}g
                     </div>
                     <div>
                       <b>Carbohydrates:</b>{" "}
-                      {(nutrientsObj.carbohydrates * servingSize / 100).toFixed(2)}g
+                      {(
+                        (nutrientsObj.carbohydrates * servingSize) /
+                        100
+                      ).toFixed(2)}
+                      g
                     </div>
                     <div>
                       <b>Fiber:</b>{" "}
-                      {(nutrientsObj.fiber * servingSize / 100).toFixed(2)}g
+                      {((nutrientsObj.fiber * servingSize) / 100).toFixed(2)}g
                     </div>
                   </>
                 )}
