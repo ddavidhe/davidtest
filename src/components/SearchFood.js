@@ -15,8 +15,15 @@ function SearchFood() {
   const [searched, setSearched] = useState(false);
   const [loading, setLoading] = useState(false);
   const [servingSize, setServingSize] = useState(100);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const onSearch = () => {
+    if (query.trim() === "") {
+      setErrorMessage("Please enter a search query.");
+      return;
+    }
+
+    setErrorMessage("");
     setSearched(true);
     setLoading(true);
 
@@ -49,7 +56,6 @@ function SearchFood() {
         setLoading(false);
         setQuery("");
       })
-
       .catch((error) => {
         console.log("error fetching", error);
         setLoading(false);
@@ -61,6 +67,17 @@ function SearchFood() {
       onSearch();
     }
   };
+
+  function RouteHome() {
+    setFoodItem(null);
+    setNutrientsObj(null);
+    setFoodFound(false);
+    setSearched(false);
+    setLoading(false);
+    setErrorMessage("");
+    setQuery("");
+    navigate("/");
+  }
 
   function RouteFruits() {
     navigate("/fruits");
@@ -116,6 +133,7 @@ function SearchFood() {
             style={{ cursor: "pointer" }}
           />
         </div>
+        {errorMessage && <p>{errorMessage}</p>}
       </div>
 
       <div className="search-results">
