@@ -20,8 +20,8 @@ Snack Track is a web application built using React that allows users to search f
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/snack-track.git`
-2. Navigate to the project directory: `cd snack-track`
+1. Clone the repository: `git clone https://github.com/ddavidhe/wea-food-project.git`
+2. Navigate to the project directory: `cd wea-food-project`
 3. Install the dependencies: `npm install`
 
 ### Usage
@@ -43,22 +43,6 @@ Please ensure that your pull request adheres to the established coding conventio
 
 ## Feedback and Support
 
-We appreciate any feedback you have on Snack Track. If you encounter any issues or have suggestions for improvement, please [open an issue](link_to_issue_tracker) on our issue tracker.
+We appreciate any feedback you have on Snack Track. If you encounter any issues or have suggestions for improvement, please let us know!
 
-For support or inquiries, you can reach out to the project maintainers by [email](mailto:snacktrack@example.com).
-
-## License
-
-Snack Track is released under the [MIT License](link_to_license_file). You are free to use, modify, and distribute this project.
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For support or inquiries, you can reach out to the project maintainer by [email](mailto:dylan.finlay33@gmail.com).
