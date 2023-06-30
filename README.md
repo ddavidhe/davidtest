@@ -7,6 +7,8 @@
 
 Snack Track is a web application built using React that allows users to search for and access detailed nutritional information about various foods. With its user-friendly interface and comprehensive database, Snack Track empowers individuals to make informed dietary choices and maintain a healthy lifestyle.
 
+This project was completed by a group of five individuals: Dylan Finlay, David He, Daniel Chenrui Zhang, Marcus Luong, and Varuni Gupta. It was completed as a one week assignment to test our web-development skills using react, and incorporating API's. A full project report can be found [here](./src/SnackTrackReport.pdf).
+
 ## Features
 
 - **Search Functionality**: Users can search for specific food items by name and obtain detailed nutrient information.
