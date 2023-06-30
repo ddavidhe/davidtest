@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Snack Track
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="./src/SnackTrackHome.png" alt="Snack Track Banner" width="600" height="300" class="centered-image" />
+</p>
+<!-- ![Snack Track Banner](./src/SnackTrackHome.png) -->
 
-## Available Scripts
+Snack Track is a web application built using React that allows users to search for and access detailed nutritional information about various foods. With its user-friendly interface and comprehensive database, Snack Track empowers individuals to make informed dietary choices and maintain a healthy lifestyle.
 
-In the project directory, you can run:
+This project was completed by a group of five individuals: Dylan Finlay, David He, Daniel Chenrui Zhang, Marcus Luong, and Varuni Gupta. It was completed as a one week assignment to test our web-development skills using react, and incorporating API's. A full project report can be found [here](./src/SnackTrackReport.pdf).
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Search Functionality**: Users can search for specific food items by name and obtain detailed nutrient information.
+- **Flexible Serving Size**: Nutrient values adjust dynamically based on the serving size specified by the user.
+- **Categorized Food Buttons**: Quick access to common food categories, such as fruits, vegetables, grains, dairy, and meat/alternatives.
+- **Detailed Food Pages**: Individual food pages display the name, image, nutrient values, and serving size input for a specific food item. Nutrient values include calories, protein, fat, carbohydrates and fiber.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js: Make sure you have Node.js installed on your machine. You can download it from [here](https://nodejs.org).
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository: `git clone https://github.com/ddavidhe/wea-food-project.git`
+2. Navigate to the project directory: `cd wea-food-project`
+3. Install the dependencies: `npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the development server: `npm start`
+2. Open your preferred browser and visit `http://localhost:3000` to access the Snack Track application.
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+We welcome contributions to improve Snack Track! To contribute, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push the branch: `git push origin feature/your-feature-name`.
+5. Submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Please ensure that your pull request adheres to the established coding conventions and passes all tests.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Feedback and Support
 
-## Learn More
+We appreciate any feedback you have on Snack Track. If you encounter any issues or have suggestions for improvement, please let us know!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For support or inquiries, you can reach out to the project maintainer by [email](mailto:dylan.finlay33@gmail.com).
