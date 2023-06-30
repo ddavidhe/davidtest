@@ -1,6 +1,8 @@
 # Snack Track
 
-<img src="./src/SnackTrackHome.png" alt="Snack Track Banner" width="500" height="250" />
+<p align="center">
+  <img src="./src/SnackTrackHome.png" alt="Snack Track Banner" width="600" height="300" class="centered-image" />
+</p>
 <!-- ![Snack Track Banner](./src/SnackTrackHome.png) -->
 
 Snack Track is a web application built using React that allows users to search for and access detailed nutritional information about various foods. With its user-friendly interface and comprehensive database, Snack Track empowers individuals to make informed dietary choices and maintain a healthy lifestyle.
