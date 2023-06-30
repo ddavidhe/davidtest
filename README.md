@@ -9,8 +9,7 @@ Snack Track is a web application built using React that allows users to search f
 - **Search Functionality**: Users can search for specific food items by name and obtain detailed nutrient information.
 - **Flexible Serving Size**: Nutrient values adjust dynamically based on the serving size specified by the user.
 - **Categorized Food Buttons**: Quick access to common food categories, such as fruits, vegetables, grains, dairy, and meat/alternatives.
-- **Detailed Food Pages**: Individual food pages display the name, image, nutrient values, and serving size input for a specific food item.
-- **Responsive Design**: The web application is optimized for various devices and screen sizes, ensuring a seamless user experience.
+- **Detailed Food Pages**: Individual food pages display the name, image, nutrient values, and serving size input for a specific food item. Nutrient values include calories, protein, fat, carbohydrates and fiber.
 
 ## Getting Started
 
